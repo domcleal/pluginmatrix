@@ -1,0 +1,6 @@
+.project
+*.swp
+*.swn
+*.swo
+tmp/
+.ruby-*
