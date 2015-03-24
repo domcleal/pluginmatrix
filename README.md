@@ -17,7 +17,7 @@ Examples:
 
 Gets the latest version from rubygems.org, optionally matching a gem version specification (`%3E` is `>`).
 
-### GET /deb/:repo/:package/:name
+### GET /deb/:repo/:name
 
 Examples:
 
@@ -26,7 +26,7 @@ Examples:
 
 Gets the latest Debian package version for a given gem, optionally comparing against a gem version specification (`%3E` is `>`).
 
-### GET /rpm/:repo/:package/:name
+### GET /rpm/:repo/:name
 
 Examples:
 
