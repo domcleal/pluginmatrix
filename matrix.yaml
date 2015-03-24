@@ -8,11 +8,6 @@ foreman_abrt:
   '1.8': '>=0'
   '1.7': '>=0'
   '1.6': '>=0'
-foreman_audited_notifications:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
 foreman_bootdisk:
   develop: '>=0'
   '1.8': '~>5.0'
@@ -24,11 +19,6 @@ foreman_chef:
   '1.7': ~>0.0.0
   '1.6': ~>0.0.0
 foreman_column_view:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-foreman_plugin_computeresource_add_remove_interface:
   develop: '>=0'
   '1.8': '>=0'
   '1.7': '>=0'
@@ -83,17 +73,12 @@ foreman_hooks:
   '1.8': '>=0'
   '1.7': '>=0'
   '1.6': '>=0'
-foreman_host_overview:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
 foreman_host_rundeck:
   develop: '>=0'
   '1.8': '>=0'
   '1.7': '>=0'
   '1.6': '>=0'
-foreman_mco:
+foreman-mco:
   develop: '>=0'
   '1.8': '>=0'
   '1.7': '>=0'
@@ -128,27 +113,7 @@ foreman_param_lookup:
   '1.8': '>=0'
   '1.7': '>=0'
   '1.6': '>=0'
-foreman_plugin_exec_cmd:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-foreman_radiator:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
 foreman_reserve:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-foreman_resources:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-foreman_reverse_proxy:
   develop: '>=0'
   '1.8': '>=0'
   '1.7': '>=0'
@@ -174,16 +139,6 @@ foreman_templates:
   '1.7': '>=0'
   '1.6': '>=0'
 foreman_xen:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-hostgroup_extra_validator_foreman:
-  develop: '>=0'
-  '1.8': '>=0'
-  '1.7': '>=0'
-  '1.6': '>=0'
-hubot_notify:
   develop: '>=0'
   '1.8': '>=0'
   '1.7': '>=0'
