@@ -11,7 +11,11 @@ def get_rubygems(name, compare = '>= 0')
 end
 
 def get_octokit
-  Octokit::Client.new
+  if ENV['GITHUB_OAUTH_TOKEN']
+    Octokit::Client.new(access_token: ENV['GITHUB_OAUTH_TOKEN'])
+  else
+    Octokit::Client.new
+  end
 end
 
 def show_badge(badge_name, gem_name, pkg_gem_version, compare)
