@@ -17,8 +17,8 @@ Gets the latest version from rubygems.org, optionally matching a gem version spe
 
 Examples:
 
-* `/deb/develop/ruby-foreman-tasks/foreman-tasks`
-* `/deb/1.8/ruby-foreman-tasks/foreman-tasks?compare=~%3E0.6.0`
+* `/deb/develop/foreman-tasks`
+* `/deb/1.8/foreman-tasks?compare=~%3E0.6.0`
 
 Gets the latest Debian package version for a given gem, optionally comparing against a gem version specification (`%3E` is `>`).
 
@@ -26,8 +26,8 @@ Gets the latest Debian package version for a given gem, optionally comparing aga
 
 Examples:
 
-* `/rpm/develop/rubygem-foreman-tasks/foreman-tasks`
-* `/rpm/1.8/rubygem-foreman-tasks/foreman-tasks?compare=~%3E0.6.0`
+* `/rpm/develop/foreman-tasks`
+* `/rpm/1.8/foreman-tasks?compare=~%3E0.6.0`
 
 Gets the latest RPM package version for a given gem, optionally comparing against a gem version specification (`%3E` is `>`).
 

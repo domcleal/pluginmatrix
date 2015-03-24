@@ -37,13 +37,13 @@ get '/gem/:name' do
   end
 end
 
-get '/deb/:repo/:package/:file' do
+get '/deb/:repo/:name' do
   halt 'invalid repo' unless params[:repo] =~ /\A([\d\.]+|develop)\z/
-  halt 'invalid package' unless params[:package] =~ /\A[\w-]+\z/
-  halt 'invalid filename' unless params[:file] =~ /\A[\w-]+\z/
+  halt 'invalid name' unless params[:name] =~ /\A[\w-]+\z/
+  package = 'ruby-' + params[:name].gsub('_', '-')
 
   begin
-    bundler = get_octokit.contents('theforeman/foreman-packaging', ref: "deb/#{params[:repo]}", path: "plugins/#{params[:package]}/#{params[:file]}.rb")
+    bundler = get_octokit.contents('theforeman/foreman-packaging', ref: "deb/#{params[:repo]}", path: "plugins/#{package}/#{params[:name]}.rb")
   rescue Octokit::NotFound
     redirect 'https://img.shields.io/badge/deb-missing-red.svg'
   end
@@ -58,19 +58,19 @@ get '/deb/:repo/:package/:file' do
   show_badge('deb', gem_name, pkg_gem_version, params[:compare])
 end
 
-get '/rpm/:repo/:package/:file' do
+get '/rpm/:repo/:name' do
   halt 'invalid repo' unless params[:repo] =~ /\A([\d\.]+|develop)\z/
-  halt 'invalid package' unless params[:package] =~ /\A[\w-]+\z/
-  halt 'invalid filename' unless params[:file] =~ /\A[\w-]+\z/
+  halt 'invalid name' unless params[:name] =~ /\A[\w-]+\z/
+  package = 'rubygem-' + params[:name]
 
   begin
-    files = get_octokit.contents('theforeman/foreman-packaging', ref: "rpm/#{params[:repo]}", path: params[:package])
+    files = get_octokit.contents('theforeman/foreman-packaging', ref: "rpm/#{params[:repo]}", path: package)
   rescue Octokit::NotFound
     redirect 'https://img.shields.io/badge/rpm-missing-red.svg'
   end
 
   filename = files.map { |f| f['name'] }.find { |f| f.end_with? '.gem' }
-  if filename && filename =~ /\A(#{params[:file]})-([\w\.-]+)\.gem\Z/
+  if filename && filename =~ /\A(#{params[:name]})-([\w\.-]+)\.gem\Z/
     gem_name, pkg_gem_version = $1, $2
   else
     halt 'cannot determine gem version from packaging repo'
