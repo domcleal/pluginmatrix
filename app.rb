@@ -3,6 +3,12 @@ require 'json'
 require 'octokit'
 require 'gems'
 require 'base64'
+require 'rack/cache'
+
+use Rack::Cache,
+  :metastore   => "file:#{File.expand_path('../tmp/meta', __FILE__)}",
+  :entitystore => "file:#{File.expand_path('../tmp/body', __FILE__)}",
+  :verbose     => true
 
 def get_rubygems(name, compare = '>= 0')
   gemcmp = Gem::Dependency.new('', compare)
@@ -25,6 +31,10 @@ def show_badge(badge_name, gem_name, pkg_gem_version, compare)
     colour = (gem_version && pkg_gem_version >= gem_version) ? 'green' : 'yellow'
   end
   redirect "https://img.shields.io/badge/#{badge_name}-#{pkg_gem_version}-#{colour}.svg"
+end
+
+before do
+  expires 7200, :public
 end
 
 get '/gem/:name' do
@@ -84,6 +94,7 @@ get '/rpm/:repo/:name' do
 end
 
 get '/' do
+  expires 30, :public
   locals = {'matrix' => YAML.load(File.read(File.expand_path('../matrix.yaml', __FILE__)))}
   erb :matrix, locals: locals
 end

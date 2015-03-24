@@ -9,6 +9,8 @@ GEM
     octokit (3.8.0)
       sawyer (~> 0.6.0, >= 0.5.3)
     rack (1.6.0)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-protection (1.5.3)
       rack
     sawyer (0.6.0)
@@ -27,4 +29,5 @@ DEPENDENCIES
   gems
   octokit
   rack (>= 1.5.2)
+  rack-cache
   sinatra
