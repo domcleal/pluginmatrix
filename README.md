@@ -4,6 +4,10 @@ Shows versions of Foreman plugins in rubygems.org, our apt and yum repositories 
 
 ## API
 
+### GET /
+
+Web page listing matrix of plugins from `matrix.yaml`.
+
 ### GET /gem/:name
 
 Examples:

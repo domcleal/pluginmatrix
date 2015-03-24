@@ -78,3 +78,8 @@ get '/rpm/:repo/:name' do
 
   show_badge('rpm', gem_name, pkg_gem_version, params[:compare])
 end
+
+get '/' do
+  locals = {'matrix' => YAML.load(File.read(File.expand_path('../matrix.yaml', __FILE__)))}
+  erb :matrix, locals: locals
+end

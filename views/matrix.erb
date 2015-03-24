@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+  <tr>
+    <th>gem</th>
+    <th>nightly</th>
+    <th>1.8</th>
+    <th>1.7</th>
+    <th>1.6</th>
+  </tr>
+<% matrix.keys.sort.each do |gem| %>
+  <tr>
+    <td><%= gem %></td>
+    <% ['develop', '1.8', '1.7', '1.6'].each do |version| %>
+    <% compare = matrix[gem][version] || '>= 0' %>
+    <td>
+      <img src="<%= url("/gem/#{gem}?compare=#{URI.escape(compare)}") %>" />
+      <img src="<%= url("/deb/#{version}/#{gem}?compare=#{URI.escape(compare)}") %>" />
+      <img src="<%= url("/rpm/#{version}/#{gem}?compare=#{URI.escape(compare)}") %>" />
+    </td>
+    <% end%>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,205 @@
+bastion:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_abrt:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_audited_notifications:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_bootdisk:
+  develop: '>=0'
+  '1.8': '~>5.0'
+  '1.7': '~>4.0'
+  '1.6': '~>3.0'
+foreman_chef:
+  develop: '>=0'
+  '1.8': ~>0.1.0
+  '1.7': ~>0.0.0
+  '1.6': ~>0.0.0
+foreman_column_view:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_plugin_computeresource_add_remove_interface:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_content:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_custom_parameters:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_default_hostgroup:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_dhcp_browser:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_digitalocean:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_discovery:
+  develop: '>=0'
+  '1.8': '~>3.0'
+  '1.7': '~>2.0'
+  '1.6': '~>1.0'
+foreman_docker:
+  develop: '>=0'
+  '1.8': '~>1.0'
+  '1.7': '~>1.0'
+  '1.6': '>=0'
+foreman_epel_release:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_graphite:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_hooks:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_host_overview:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_host_rundeck:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_mco:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_memcache:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_one:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_openscap:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_openstack_cluster:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_ovirt:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_param_lookup:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_plugin_exec_cmd:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_radiator:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_reserve:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_resources:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_reverse_proxy:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_salt:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_setup:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman-tasks:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_templates:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+foreman_xen:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+hostgroup_extra_validator_foreman:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+hubot_notify:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+puppetdb_foreman:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+staypuft:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
+ovirt_provision_plugin:
+  develop: '>=0'
+  '1.8': '>=0'
+  '1.7': '>=0'
+  '1.6': '>=0'
